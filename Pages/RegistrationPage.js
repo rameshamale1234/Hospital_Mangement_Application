@@ -19,7 +19,7 @@ export default class RegistrationPage {
     }
 
     async goToRegistrationPage() {
-        await this.page.goto('http://localhost/hospital-management-system-master/');
+        await this.page.goto('Url');
     }
 
     async patientRegistration(userData) {

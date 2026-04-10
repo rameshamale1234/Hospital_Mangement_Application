@@ -31,7 +31,6 @@ export default defineConfig({
     screenshot: 'on',
     video: 'on',
     baseURL: 'http://localhost/hospital-management-system-master',
-
   },
 
   /* Configure projects for major browsers */
