@@ -36,6 +36,34 @@ class PatientDashboardPage{
         .filter({hasText:AppointmentTime})
     return row;
     }
+
+    async CancelAppointment(drName,appoinmentDate,appoinmentTime){
+        await this.appointMentHistoryTab.click();
+     const row = this.tableRows
+        .filter({ hasText: drName })
+        .filter({ hasText: appoinmentDate })
+        .filter({ hasText: appoinmentTime });
+
+    await row.first().waitFor();
+        const status = await row.locator('td').last().textContent();
+
+    console.log("Appointment Status:", status);
+
+     if (status.trim().toLowerCase().includes('cancelled')) {
+        console.log("Appointment already cancelled");
+        return row;
+    }
+
+
+    this.page.once('dialog', async dialog => {
+        console.log(dialog.message());
+        await dialog.accept();
+    });
+
+    await row.getByRole('link', { name: 'Cancel' }).click();
+
+    return row;
+    }
 }
 
 
