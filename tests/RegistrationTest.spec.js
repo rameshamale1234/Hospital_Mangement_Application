@@ -1,5 +1,5 @@
 const { test, expect } = require('@playwright/test');
-const { RegistrationPage } = require('../Pages/RegistrationPage.js'); 
+import RegistrationPage from '../Pages/RegistrationPage.js';
 import { generateUserData } from '../Utils/registrationData.js';
 
 test('npx playwright test -g "Patient registration" --ui', async ({ page }) => {
