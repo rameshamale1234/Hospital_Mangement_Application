@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
-const { RegistrationPage } = require('../Pages/RegistrationPage'); 
-import { generateUserData } from '../Utils/registrationData';
+const { RegistrationPage } = require('../Pages/RegistrationPage.js'); 
+import { generateUserData } from '../Utils/registrationData.js';
 
 test('npx playwright test -g "Patient registration" --ui', async ({ page }) => {
     // Create object of the Page class
