@@ -1,5 +1,5 @@
 import {test, expect} from '@playwright/test';
-const { RegistrationPage } = require('../Pages/RegistrationPage'); 
+import RegistrationPage from '../Pages/RegistrationPage.js'; 
 import adminLoginData from '../Utils/adminLoginData.json';
 
 test('Admin login test', async ({ page }) => {

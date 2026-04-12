@@ -1,6 +1,6 @@
 import{test,expect} from '../Fixtures/doctorloginfixture';
-const {RegistrationPage} = require('../Pages/RegistrationPage');
-const {DoctorDashboardPage} = require('../Pages/DoctorDashboardPage');
+import RegistrationPage from '../Pages/RegistrationPage.js';
+import  DoctorDashboardPage  from '../Pages/DoctorDashboardPage.js';
 import appointmentData from '../Utils/AppointmentBooking.json';
 import patientData from '../Utils/patienDetailsForVerifyAppointementInDrDashBoard.json';
 

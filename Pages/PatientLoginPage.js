@@ -14,5 +14,3 @@ export default class PatientLoginPage{
         await this.patientLoginButton.click();
     }
 }
-
-module.exports={PatientLoginPage};

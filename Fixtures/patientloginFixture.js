@@ -1,5 +1,5 @@
 import { test as base, expect } from '@playwright/test';
-const { PatientLoginPage } = require('../Pages/PatientLoginPage');
+import  PatientLoginPage  from '../Pages/PatientLoginPage.js';
 import AppointmentBooking from '../Utils/AppointmentBooking.json';
 
 

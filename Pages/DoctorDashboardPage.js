@@ -18,5 +18,3 @@ export default class DoctorDashboardPage {
     }
 
 }
-
-module.exports = { DoctorDashboardPage };

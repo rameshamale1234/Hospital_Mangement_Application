@@ -1,6 +1,6 @@
 import{test,expect} from '@playwright/test';
-const { RegistrationPage } = require('../Pages/RegistrationPage');
-const {DoctorDashboardPage} =require('../Pages/DoctorDashboardPage')
+import  RegistrationPage from '../Pages/RegistrationPage.js';
+import  DoctorDashboardPage from '../Pages/DoctorDashboardPage.js'
 import drLoginData from '../Utils/drLoginData.json';
 
 
