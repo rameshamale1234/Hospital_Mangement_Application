@@ -1,0 +1,10 @@
+[
+    {
+        "drName": "Ramesh",
+        "specialization": "Cardiologist",
+        "email": "drjohndoe@example.com",
+        "password": "password123",
+        "confirmPassword": "password123",
+        "consultationFee": 100
+    }
+]
