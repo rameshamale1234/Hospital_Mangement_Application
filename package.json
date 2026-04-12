@@ -6,7 +6,6 @@
   "scripts": {},
   "keywords": [],
   "author": "",
-  "type": "module",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
